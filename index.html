@@ -71,6 +71,65 @@
     }
 
     .footer a:hover { color: #888; }
+    .projects {
+      margin-bottom: 2rem;
+    }
+
+    .projects-label {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #444;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.875rem;
+      padding: 0.875rem 1rem;
+      border: 1px solid #222;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, background 0.15s;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card:hover {
+      border-color: #444;
+      background: #141414;
+    }
+
+    .project-card:last-child { margin-bottom: 0; }
+
+    .project-icon {
+      font-size: 1.25rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .project-info { min-width: 0; }
+
+    .project-name {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #e2e2e2;
+    }
+
+    .project-desc {
+      font-size: 0.8125rem;
+      color: #666;
+      margin-top: 0.2rem;
+      line-height: 1.4;
+    }
+
+    .project-meta {
+      font-size: 0.6875rem;
+      color: #444;
+      margin-top: 0.35rem;
+    }
   </style>
 </head>
 <body>
@@ -83,6 +142,26 @@
     </div>
 
     <p class="tagline">DevOps &amp; Infrastructure Engineer</p>
+
+    <div class="projects">
+      <p class="projects-label">VS Code Themes</p>
+      <a class="project-card" href="https://marketplace.visualstudio.com/items?itemName=jordanwalker.warm-luma" target="_blank" rel="noopener">
+        <span class="project-icon">&#x1F7E0;</span>
+        <div class="project-info">
+          <div class="project-name">Warm Luma</div>
+          <div class="project-desc">A dark theme with a warm amber palette and bright, high-contrast token colours.</div>
+          <div class="project-meta">VS Code Marketplace</div>
+        </div>
+      </a>
+      <a class="project-card" href="https://marketplace.visualstudio.com/items?itemName=jordanwalker.zenith-readable" target="_blank" rel="noopener">
+        <span class="project-icon">&#x1F535;</span>
+        <div class="project-info">
+          <div class="project-name">Zenith Readable</div>
+          <div class="project-desc">Zenith theme with improved contrast and full Terraform/HCL colour support.</div>
+          <div class="project-meta">VS Code Marketplace</div>
+        </div>
+      </a>
+    </div>
 
     <p class="footer">
       <a href="https://github.com/JLWProject" target="_blank" rel="noopener">github.com/JLWProject</a>
